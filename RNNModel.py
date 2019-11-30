@@ -62,9 +62,13 @@ def __main__():
         output = "rock"
     #user => paper
     elif test_output/100 < 1 and test_output/10 >=1:
-        output = "scissors"
-    #user => scissors
-    elif test_output/100 < 1 and test_output/10 < 1:
+        if test_output >= 67 :
+            output = "rock"
+        elif test_output <67 and test_output >= 33:
+            output = "scissors"
+        else:
+            output = "papper"
+    else:
         output = "paper"
 
     print(output)
